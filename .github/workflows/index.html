@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Christelle de Clayton 💕</title>
+    <style>
+        body { 
+            font-family: -apple-system, sans-serif;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;
+            margin: 0;
+        }
+        .card { 
+            background: rgba(255,255,255,0.95); 
+            padding: 30px; 
+            border-radius: 25px; 
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3); 
+            text-align: center; 
+            max-width: 380px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        h1 { 
+            color: #c44569; 
+            font-size: 2.2em; 
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p { 
+            color: #333; 
+            font-size: 1.2em; 
+            line-height: 1.6; 
+            margin-bottom: 18px;
+        }
+        .signature { 
+            color: #666; 
+            font-style: italic;
+            margin-top: 25px;
+        }
+        .whatsapp-btn { 
+            background: #25D366; 
+            color: white; 
+            padding: 18px 35px; 
+            border: none; 
+            border-radius: 50px; 
+            font-size: 1.2em; 
+            font-weight: bold;
+            cursor: pointer; 
+            margin-top: 25px; 
+            box-shadow: 0 15px 30px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+            width: 100%;
+        }
+        .whatsapp-btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 20px 40px rgba(37,211,102,0.5);
+        }
+        .hearts { font-size: 3em; margin: 20px 0; animation: bounce 1.5s infinite; }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hearts">💖💕❤️</div>
+        
+        <h1>Christelle mon amour 💕</h1>
+        
+        <p>Chaque fois que je vois ton sourire, mon cœur fait un bond 🌹</p>
+        <p>Tu es mon soleil, mon bonheur, mon tout</p>
+        <p>Merci de m'aimer. Je t'aime ENCORE PLUS chaque jour ! 😘💑</p>
+        
+        <div class="hearts">💖💕❤️</div>
+        
+        <p class="signature">Pour toujours,<br><strong>Clayton 💕</strong></p>
+        
+        <button class="whatsapp-btn" onclick="sendWhatsApp()">
+            📱 Partager sur WhatsApp
+        </button>
+    </div>
+
+    <script>
+        function sendWhatsApp() {
+            const message = encodeURIComponent(
+                "💕 Christelle mon amour, regarde ce que Clayton t'a préparé pour la Saint-Valentin ! ❤️"
+            );
+            window.open(⁠ https://wa.me/?text=${message} ⁠, '_blank');
+        }
+    </script>
+</body>
+</html>
